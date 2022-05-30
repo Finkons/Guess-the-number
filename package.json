@@ -2,10 +2,12 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Finkons.github.io/Guess-the-number",
+  "homepage": "https://Finkons.github.io/guess-the-number",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Guess-the-number/"
+    "build": "parcel build src/*.html --public-url /guess-the-number/",
+    "server": "node ./app.js",
+    "serv": "json-server --watch -p 3003 db.json"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,8 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "express": "^4.18.1",
+    "json-server": "^0.17.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
