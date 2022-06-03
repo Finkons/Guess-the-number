@@ -1,0 +1,134 @@
+body {
+  font-family: "Bubblegum Sans", sans-serif;
+  background-color: rgb(197, 246, 248);
+}
+
+.game-title {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  font-size: 6vw;
+  color: #0527e7;
+  padding: 16px;
+   animation: animate125 3000ms infinite;
+}
+
+.game-container {
+  display: block;
+  text-align: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  height: 120px;
+  max-width: 170px;
+  border: 0;
+  border-radius: 30px;
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  color: indigo;
+  background-color: ivory;
+}
+.btn {
+  cursor: pointer;
+  height: 110px;
+  width: 110px;
+  font-size: 90px;
+  background-color: #e0f807;
+    color: rgb(68, 84, 233);
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  box-shadow: 3px 5px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+   background-color: #ebfc00;
+    color: rgb(47, 67, 247);
+  }
+   transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:active{
+    color: rgb(1, 31, 31);
+  background-color: rgb(253, 13, 13);
+    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.result {
+  color: rgb(13, 153, 153);
+  font-size: 4vw;
+  margin-bottom: 10px;
+   @media screen and (max-width: 400px) {
+        font-size: 10vw;
+    }
+}
+.result-text {
+  color: rgb(138, 125, 6);
+  font-size: 5vw;
+  @media screen and (max-width: 400px) {
+        font-size: 11vw;
+    }
+}
+
+.game-message{
+   margin-top: 10px;
+  font-size: 7vw;
+  color: #f54d23;
+   animation: animate75 3000ms infinite;
+}
+
+
+@keyframes animate75 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.98);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.bingo {
+  margin-top: 10px;
+  font-size: 14vw;
+  color: #47f702;
+  animation: animate125 500ms infinite;
+  @media screen and (max-width: 400px) {
+        font-size: 27vw;
+    }
+}
+@keyframes animate100 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
