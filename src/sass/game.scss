@@ -58,7 +58,8 @@ form {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.result {
+.result,
+.current-point {
   color: rgb(13, 153, 153);
   font-size: 4vw;
   margin-bottom: 10px;
@@ -66,7 +67,10 @@ form {
         font-size: 10vw;
     }
 }
-.result-text {
+
+
+.result-text,
+.current-point-text {
   color: rgb(138, 125, 6);
   font-size: 5vw;
   @media screen and (max-width: 400px) {
@@ -84,15 +88,15 @@ form {
 
 @keyframes animate75 {
   0% {
-    transform: scale(1);
+    transform: scale(1.2);
   }
 
   50% {
-    transform: scale(0.98);
+    transform: scale(0.9);
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1.2);
   }
 }
 @keyframes animate125 {
@@ -101,7 +105,7 @@ form {
   }
 
   50% {
-    transform: scale(1.02);
+    transform: scale(1.1);
   }
 
   100% {
