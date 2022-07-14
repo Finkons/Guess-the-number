@@ -39,19 +39,22 @@ function onCheck() {
   console.log('count:', count);
 }
 const bestScore = JSON.parse(localStorage.getItem(STORAGE_KEY))
-if (STORAGE_KEY, JSON.stringify(count) === null) {
-  resultText.textContent = 0
-}
+
 function saveResult() {
   message.classList.add('bingo')
   message.textContent = 'Bingo!!!'
 
+
   localStorage.setItem(STORAGE_KEY, JSON.stringify(count))
-  resultText.textContent = `${localStorage.getItem(STORAGE_KEY)}`
+
 
   setTimeout(() => {
     location.reload()
   }, 2000);
 }
+if (localStorage.getItem(STORAGE_KEY) === null) {
+  resultText.textContent = 0
+} else {
+  resultText.textContent = `${localStorage.getItem(STORAGE_KEY)}`
+}
 
-resultText.textContent = `${localStorage.getItem(STORAGE_KEY)}`;
